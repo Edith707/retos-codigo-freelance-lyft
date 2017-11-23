@@ -1,0 +1,278 @@
+/*  En la etiqueta body puse el margen, borde y pading 0 para que cuando determine el formato de nav no deje espacios en el top*/
+body {
+  margin: 0;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0;
+}
+/*Formato de la etiqueta nav con posicion fija para que se mantenga a pesar de que vayams a otras secciones de la página */
+nav{
+  background-color: #2c3e50;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  position: fixed;
+  width: 100%;
+}
+ nav>div>h2{
+    color:white;
+    /*outline: 1px solid purple;*/
+    display:inline-block;
+    font-weight: 700px;
+    letter-spacing: 1px;;
+    margin-left: 120px;
+ }
+
+nav>div>a {
+  /*outline: 1px solid purple;*/
+  color:white;
+  text-decoration: none;
+  text-shadow: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  border-radius: 4px;
+}
+/* Utilizó la subclase hoover para que al momento de pasar el cursor sobre el elemento las letras cambien de color*/
+nav>div>a:hover {
+  color: #18bc9c;
+}
+nav>div>a:focus{
+  /*lUtilizo la seudo clase focus para que al momento de dar click en el elemento este cambie de color y permanezca en ese estado */
+  background-color:  #18bc9c;
+  color:white;
+}
+hr {
+  display:inline-block;
+  width: 200px;
+}
+footer {
+  background-color: #2c3e50;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+footer>p {
+  font-size: 8pt;
+  text-align: center;
+}
+ /* Dando formato a la seccion 1*/
+.section-1 {
+  background-color: #18bc9c;
+  color:white;
+  padding: 0 0 10px  0 ;
+  text-align: center;
+  width: 100%;
+}
+.section-1 >img {
+  margin-top: 200px;
+}
+.section-1 >div>h1{
+  font-size: 65pt;
+}
+.section-1 >div>h2{
+  display: block;
+  font-size: 24pt;
+  margin-bottom: 200px;
+}
+  /*dando formato a la seccion 2 */
+.section-2{
+  text-align: center;
+}
+
+.up{
+  margin: 20px 60px 20px 84px;
+}
+.up>img {
+  margin-left: 30px;
+}
+.down {
+  margin: 20px 60px 20px 84px;
+}
+
+.down >img{
+  margin-left: 30px;
+}
+ /*Dando formato a la seccion 3*/
+.section-3 {
+  background-color: #18bc9c;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16pt;
+  height: 550px;
+  margin: 50px 0px 0px 0px;
+}
+.left {
+  height: 180;
+  line-height: 1.5em;
+  margin: 70px 20px 0px 747px;
+  text-align:left;
+  width: 380px;
+}
+.center {
+  border: 2px solid white;
+  border-radius: 8px;
+  display: inline-block;
+  height: 50px;
+  margin: 32px 28px 0px 600px;
+  text-align: center;
+  vertical-align: super;
+  width: 212.767px;
+}
+.rigth {
+  height: 180px;
+  line-height: 1.5em;
+  margin: -292px 35px 60px 306px;
+  text-align: left;
+  width: 380px;
+}
+
+ /* Dando formato a la seccion 4*/
+.section-4 {
+  color: "e3e3e3";
+  display: block;
+  height: 800px;
+  width: 100%;
+}
+.section-4>h2 {
+  font-size:24pt;
+}
+/*Dando formato dentro a los elementos input dentro del formulario*/
+.contact >input, .contact>textarea{
+  align-items: center;
+  display: block;
+  font-family: sans-serif;
+  font-size: 10pt;
+  height: 97.25px;
+  margin-left: 25%;
+    resize: none;
+  width: 730px;
+}
+ /* Utilizo estas clases para dar formato a varios etiquetas */
+.letter-spacing{
+  letter-spacing:
+}
+.align-center {
+  align-items: center;
+}
+.tex-center
+ {
+  text-align: center;
+}
+ /*Dando formato a los cuadros de la seccion footer*/
+.left1 {
+  display: inline-block;
+  margin: 0px  50px  0px  300px;
+  vertical-align: text-top;
+}
+.center1 {
+  display: inline-block;
+  margin: 0px  30px  0px  60px;
+  vertical-align: text-top;
+}
+.rigth1 {
+  display: inline-block;
+  margin: -118px  30px  0px  857px;
+  vertical-align: text-top;
+}
+ /*Asignando tamaño al icono star*/
+.icon-star-full {
+  font-size: 22pt;
+}
+/* Utilizo los id first y second para darle margen a los elementos de la barra del navegador*/
+#first {
+margin-left: 530px;
+}
+#second {
+margin-left: 10px;
+}
+ /*Dando formato al div que contiene los logos*/
+#logos{
+  display: inline-block;
+  margin: 0px 0px 50px  540px;
+}
+ /* Dando formato  a los logos*/
+#logos>span {
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-left: 15px;
+  padding: 8px;
+}
+ /*Dando formato al link que aparece al cuadro derecho del footer */
+#unique {
+  color:#128F76;
+  text-decoration: none;
+}
+#unique:hover{
+ text-decoration: underline;
+}
+ /* Aplicando formato al button del form*/
+#submit_button {
+  background-color: #18BC9C;
+  border-radius: 5px;
+  color:white;
+  margin-left: -630px;
+  padding: 10px;
+}
+/* Hacer que cuando el cursor pase sobre el elemento bootom este cambie de color */
+#submit_button:hover {
+  background-color: #128F76;
+
+}
+
+/*Dando formato a las estrellitas y hr*/
+#white1  {
+  background-color: white;
+  border:0;
+  color:white;
+  font-weight: 300px;
+  height: 5px;
+  margin-right: 5px;
+}
+#white2 {
+  align-items: center;
+  color:white;
+}
+#white3 {
+  background-color: white;
+  border:0;
+  color:white;
+  height: 5px;
+  margin-left: 5px;
+}
+
+#white4  {
+  background-color: white;
+  border:0;
+  color:white;
+  height: 5px;
+  margin-left: 454px;
+}
+#white5 {
+  color:white;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+#white6 {
+  background-color: white;
+  border:0;
+  color:white;
+  height: 5px;
+  margin-left: 5px;
+}
+#blue1  {
+  background-color: #2C3E50;
+  border:0;
+  height: 5px;
+  margin-right: 5px;
+}
+#blue2 {
+  align-items: center;
+  color:#2C3E50;
+}
+#blue3 {
+  background-color: #2C3E50;
+  border:0;
+  color: #2C3E50;
+  height: 5px;
+  margin-left: 5px;
+}

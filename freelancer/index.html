@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>START BOOTSTRAP</title>
+  <!--Vincular el html con el documento main.css para determinar el estilo-->
+    <link rel="stylesheet" href="css/main.css">
+  <!--  Vincular el html con el link de googlefonts para determinar las fuentes que utilizaré-->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/style.css">
+  </head>
+  <body>
+      <!--Utilizar la etiqueta Nav para la barra de navegación fija-->
+    <nav>
+      <div >
+        <h2 >START BOOTSTRAP</h2>
+          <!--Crear un enlace anclado para que pueda estar ligado a otras secciones  de la página (portfolio, about, contact)-->
+        <a id="first"   href="#portfolio">PORTFOLIO</a>
+        <a id="second" href="#about">ABOUT</a>
+        <a id="second" href="#contact">CONTACT</a>
+      </div>
+    </nav>
+           <!-- Dividí la página en secciones ( nav, 1=profile, 2=portfolio, 3=about, 4=contact y footer)-->
+    <section  class="section-1" >
+      <img src="assets/images/profile.png" alt="profile">
+      <div>
+        <h1   class=" text-center letter-spacing ">START BOOTSTRAP</h1>
+        <!--agregar los id white para dar formaos a las estrellitas -->
+        <hr id="white1"><span id="white2" class="icon-star-full"></span><hr id="white3">
+        <h2 class=" text-center letter-spacing">Web Developer - Graphic Artist -  User Experience Designer</h2>
+        <!--Anclaje de la seccion portfolio-->
+        <a name="portfolio"> </a>
+      </div>
+    </section>
+    <section class="section-2">
+      <div>
+        <h2   class="text-center letter-spacing">PORTFOLIO</h2>
+          <!--Agregar los id blue para dar formato a las estrellitas-->
+        <hr id="blue1"><span id="blue2 "class="icon-star-full "></span> <hr id="blue3">
+        <!--Cree un div con clase up que contenga las tres imagines para facilitar darle el formato y orden a las imagenes  -->
+        <div class="up">
+          <img src="assets/images/portfolio/cabin.png" height="300px" width="350px" alt="cabin">
+          <img src="assets/images/portfolio/cake.png" height="300px" width="350px" alt="cake">
+          <img src="assets/images/portfolio/circus.png" height="300px" width="350px" alt="circus">
+        </div>
+          <!--Cree un div con clase down que contenga las tres imagines para facilitar darle el formato y orden a las imagenes  -->
+        <div class="down">
+          <img src="assets/images/portfolio/game.png" height="300px" width="350px" alt="game">
+          <img src="assets/images/portfolio/safe.png" height="300px" width="350px" alt="safe">
+          <img src="assets/images/portfolio/submarine.png" height="300px" width="350px" alt="submarine">
+        </div>
+          <!--Anclaje de la seccion about-->
+      </div>   <a name="about"> </a>
+    </section>
+    <section class="section-3">
+      <h2 class="tex-center letter-spacing">ABOUT</h2>
+        <!--Agregar los id white para dar formato a  las estrellitas-->
+      <hr id="white4"><span id="white5"class="icon-star-full "></span><hr id="white6"  >
+      <div>
+      <div >
+        <div class="left  letter-spacing">
+          <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+        </div>
+        <div class="center tex-center letter-spacing">
+         <p><span class="icon-download3"></span>Download Theme</p>
+        </div>
+        <div class="rigth letter-spacing">
+          <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!--Anclaje de la seccion contact-->
+    <a name="contact"> </a>
+    <section class=" tex-center section-4">
+      <h2>CONTACT ME</h2>
+      <hr id="blue1"><span id="blue2"class="icon-star-full"></span><hr id="blue3" >
+      <!--Empieza el código de la etiqueta form que incluye los espacios y ligas del formulario. Utilice placeholder para hacerlo lo más parecido a la página original -->
+      <form>
+	      <div class="contact">
+		      <label for="Name"></label><br />
+		      <input id="Name" class="input" placeholder="Name" type="text" value="" size="30" /><br />
+	      </div>
+	      <div class="contact">
+		      <label for="Email"></label><br />
+		      <input id="Email" class="input" placeholder="Email Andress" type="text" value="" size="30" /><br />
+	      </div>
+        <div class="contact">
+		      <label for="Phone Number"></label><br />
+		      <input id="Phone Number" class="input" placeholder="Phone Number" type="text" value="" /><br />
+	      </div>
+	      <div class="contact">
+		      <label for="Message"></label><br />
+		      <textarea id="Message" class="input" placeholder="Message" rows="7" cols="30"></textarea><br />
+	      </div>
+  	      <input id="submit_button" type="submit" value="Send" />
+      </form>
+    </section>
+    <footer>
+       <!-- Utilizo las clases left1, center1, rigth1 para facilitar el formato de los cuadros con texto-->
+      <div class="left1">
+        <h3>LOCATION</h3>
+        <p>3481 Melrose Place </br> Beverly Hills, CA 90210</p>
+      </div>
+      <div class="center1">
+        <h3>ARROUND THE WEB</h3>
+      </div>
+      <div class="rigth1">
+        <h3>ABOUT FREELANCER</h3>
+        <!--En la etiqueta unique replique el enlace que viene en la página original-->
+        <p>Freelance is a free to use, open source </br> Bootstrap theme created by <a id="unique" href="https://startbootstrap.com/" >Start </br> Bootstrap. </a></p>
+      </div>
+      <div id="logos">
+        <!--Cree un div con clase logos que contenga los logos para facilitar posicionarlos en la página-->
+        <span class="icon-facebook"></span>
+        <span class="icon-google-plus"></span>
+        <span class="icon-twitter"></span>
+        <span class="icon-linkedin2"></span>
+        <span class="icon-dribbble"></span>
+      </div>
+      <p>Copyright © Your Website 2017 </p>
+
+    </footer>
+  </body>
+</html>
